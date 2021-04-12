@@ -1,0 +1,152 @@
+/* Base settings */
+
+html, body {
+    background-color: #fff;
+    color: #373737;
+    font-family: 'Alata', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+/* Section 1 */
+
+/* Header */
+
+header {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 130px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+header nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #373737;
+}
+
+header nav a::before {
+    content: '';
+    position: relative;
+    top: 35px;
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: transparent;    
+    transition: all 0.3s ease;
+}
+
+@keyframes linkHover {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header nav a:hover::before {
+    background-color: #717CFF;
+    transition-delay: 0.2s;
+    animation: linkHover 0.5s linear forwards;
+}
+
+header nav a:active::before {
+    background-color: #717CFF;
+}
+
+header nav button {
+    background-color: #fff;
+    border: 2px solid #717CFF;
+    border-radius: 11px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header nav button:hover {
+    background-color: #717CFF;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+/* Content */
+
+section.content {
+    padding-top: 50px;
+}
+
+section.content h1 {
+    margin-bottom: 20px;
+    font-size: 52px;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+section.content h1 span{
+    color: #717CFF;
+}
+
+section.content p {
+    max-width: 450px;
+    color: #7D7D7D;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+section.content .student {
+    position: absolute;
+    right: 250px;
+    bottom: 0;
+    width: 400px;
+    z-index: 2;
+}
+
+section.content .ellipse {
+    position: absolute;
+    width: 620px;
+    right: 0;
+    bottom: 0;    
+}
+
+section.content .apply {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 175px;
+    height: 45px;    
+    background-color: #717CFF;
+    border-radius: 11px;
+    color: #fff;
+    cursor: pointer;
+}
+
+section.content .contacts {
+    width: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.content .contacts svg {
+    cursor: pointer;
+}
